@@ -8,7 +8,7 @@ model = joblib.load("model.pkl")
 
 @app.get("/")
 def home():
-    return {"message": "ML Model API Running.Your model is ready."}
+    return {"message": "ML Model API Running."}
 
 @app.post("/predict")
 def predict(data: dict):
